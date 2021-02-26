@@ -1,0 +1,245 @@
+.main{
+    color:#205cfa !important;
+}
+.mainR{
+  color: #a83341 !important;
+}
+.mainF{
+  color: #e8465a !important;
+}
+.mainb{
+  color: #1ec2ad !important;
+}
+body{
+  color: #f1f1f1 !important;
+}
+.maing{
+  color: #adabaa !important;
+}
+.bmain{
+  color: #172422 !important;
+}
+/* .head{
+    position: relative;
+} */
+p, button , label{
+  font-family: 'Arimo', sans-serif;
+}
+h1 , h2 , h3 , h4 , h6 , h5 {
+  font-family: 'Viga', sans-serif;
+}
+.img-overlay:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    content: "";
+    background: #003c86;
+    opacity: .25;
+
+}
+.img-overlay:hover{
+  display: none;
+}
+.advertisment{
+    padding-top: 5%;
+    padding-right: 10%;
+    padding-left: 4%;
+    text-align: left;
+    background: #adabaa;
+}
+#myInput {
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 25%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    margin-top: 20px;
+
+  }
+  .img-overlay1:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    content: "";
+    background: rgba(0,0, 0,0.5)
+}
+.img-overlay1:hover{
+  display: none;
+
+}
+
+.note
+{
+    text-align: center;
+    height: 80px;
+    background: -webkit-linear-gradient(left, #a83341, #8811c5);
+    color: #fff;
+    font-weight: bold;
+    line-height: 80px;
+}
+.form-content
+{
+    padding: 5%;
+    border: 1px solid #ced4da;
+    margin-bottom: 2%;
+}
+.form-control{
+    border-radius:1.5rem;
+}
+.btnSubmit
+{
+    border:none;
+    border-radius:1.5rem;
+    padding: 1%;
+    width: 20%;
+    cursor: pointer;
+    background: #a83341;
+    color: #fff;
+}
+.cont-icon {
+  border-radius: 20%;
+  font-size: 1rem;
+  padding: 7px;
+  box-shadow: 0 0 0 3px#8811c5;
+  color:#8811c5;
+  margin-left: 70px;
+  padding:10px;
+
+}
+.cont-icon:hover{
+  cursor: pointer;
+  box-shadow: 0 0 0 3px#a83341;
+  background-color: #f1f1f1;
+  color:#a83341;
+}
+/* popup */
+.img-item
+{
+    cursor: pointer;
+}
+
+.item-caption
+{
+    position: absolute;
+    bottom: 30px;
+    background-color: #fff;
+    padding: 10px;
+    width: 80%;
+
+}
+
+#lightboxcontainer
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0,0, 0.4);
+  display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+#aboutimage{
+  width: 75%;
+    height: 300px;
+    background-image: url(../images/احمد\ سمير\ 2.jpg);
+    background-size: 100% 100%;
+}
+
+#lightboxitem
+{
+  background-color: white;
+    width: 50%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+#lightboxitem i
+{
+    font-size: 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+#iconclose
+{
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+/* responive */
+@media (max-width: 850px){
+.advertisment h2,h3{
+font-size: 20px;
+}
+.cont-icon{
+  margin: 10px 0;
+  margin-left: 20px;
+
+}
+.btnSubmit
+{
+  margin-left: 20px;
+  width: 40% !important ;
+}
+.form-control{
+  width: 100%!important;
+}
+#lightboxitem
+{
+  background-color: white;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+}
+#hero-about{
+  height: 500px;
+  max-width: 100%;
+  display: block;
+  background-image: url(../images/speaker.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 3px;
+  z-index: -1;
+}
+.slogan-2{
+  position: absolute;
+  top:35%;
+  left:35%;
+  max-width: 80%;
+  font-size:80px;
+  color:var(--white);
+  font-weight:500;
+  text-align: center;
+  z-index: 0;
+  font-family: 'viga', sans-serif;
+}
+@media(max-width:768px){
+  #hero-about::before{
+  height:100vh;
+  filter:blur(3px);
+  max-width: 100%;
+}
+#hero-about .slogan-2{
+  top: 50%;
+  filter:blur(0px);
+  left:16%;
+  max-width: 70%;
+  font-size: 40px;
+}
+}

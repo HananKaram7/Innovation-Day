@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css?family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Arimo|Viga&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:  'Arimo', sans-serif;
+}
+ :root{
+       --white: #ffffff;
+       --light-green: #1ec2ad;
+       --blue: #205cfa;
+       --red: #e8465a;
+       --dark-red: #a83341;
+       --gray: #adabaa;
+       --black: #172422;
+       --dark-gray:#ddd;
+       --lighter-gray:#f4f4f4;
+       --dark-blue:#101d3d;
+     }
+body{
+  background-color: #ffffff;
+  font-size: 18px;
+}
+/*color box*/
+#sideBar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9999999;
+}
+.color-box{
+    background-color:var(--blue);
+    padding: 7px;
+    padding-bottom: 0;
+    float: left;
+}
+.color-box h4{
+  color: var(--black);
+  font-size: 16px;
+  font-family: 'viga';
+}
+#sideBar i {
+    float: left;
+    background-color: var(--blue);
+    color: #e8465a;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+.color-item{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+/*btn*/
+#topBtn{
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  font-size: 22px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--blue);
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: none;
+  z-index: 9999;
+}
+/*hero section*/
+#hero{
+  height: 100vh;
+  max-width: 100%;
+  display: block;
+  background-image: url(../images/intro-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 3px;
+  z-index: -1;
+}
+.slogan{
+  position: absolute;
+  top:40%;
+  left:25%;
+  max-width: 80%;
+  font-size:80px;
+  color:var(--red);
+  font-weight:500;
+  text-align: center;
+  z-index: 0;
+  font-family: 'viga', sans-serif;
+}
+.register a{
+  position: absolute;
+  top:58%;
+  left:45%;
+  background-color: var(--red);
+  color:var(--white);
+  padding:15px 30px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 7px;
+}
+.register a:hover{
+  background-color: var(--blue);
+  text-decoration: none;
+  color: var(--white);
+}
+#count{
+  color:var(--white);
+  position: absolute;
+  top:70%;
+  left:23%;
+  font-size: 80px;
+  font-weight: 500;
+}
+/*experience grid*/
+.grid-2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.grid-2 .left{
+  background-color: var(--red);
+}
+.grid-2 .left h1, .activities h1{
+  font-size: 100px;
+  font-family: 'viga';
+  color: var(--white);
+  line-height: 125px;
+  padding: 50px 30px;
+  font-weight: 600;
+}
+.grid-2 .right{
+  background-color: #101d3d;
+}
+.grid-2 .right h2{
+  font-family: 'viga';
+  padding-top:30px;
+  padding-bottom: 20px;
+  line-height: 45px;
+}
+/*tickets grid*/
+.grid-2 .row{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  justify-content: center;
+  padding-left: 30px;
+  padding-bottom: 50px;
+}
+.item-1, .item-2, .item-3{
+  background-color: var(--lighter-gray);
+  padding:30px;
+  border-radius: 7px;
+  text-align: center;
+}
+.item-1 a, .item-2 a, .item-3 a{
+  background-color: var(--red);
+  color:var(--white);
+}
+/*activities*/
+.activities{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.activities .left{
+  background-color: var(--lighter-gray);
+  padding:  5px;
+}
+.activities img{
+  width: 100%;
+  border-radius: 7px;
+}
+.activities .right{
+  background-color: var(--red);
+}
+.slideshow-container {
+  width:100%;
+  position: relative;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 2px;
+  margin-top: -22px;
+  color: var(--white);
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: var(--red);
+
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: var(--red);
+  color:var(--white);
+}
+.dash {
+  height: 5px;
+  width: 20px;
+  margin: 0 1px;
+  background-color: var(--red);
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: var(--dark-blue);
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+@keyframes fade {
+  from {opacity: 0.2}
+  to {opacity: 1}
+}
+/*Speakers section*/
+.speakers{
+  background-color: var(--dark-blue);
+  padding-top: 50px;
+}
+#talks{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-row-gap: 7px;
+  justify-content:center;
+  position: relative;
+
+}
+#talks .cont{
+  position: relative;
+}
+#talks .img-pic{
+  display: inline-block;
+  max-width: 95%;
+  border-radius: 5px;
+}
+#talks a{
+  position: absolute;
+  bottom: 28px;
+  left:15px;
+  text-align: left;
+  text-decoration: none;
+  color:var(--white);
+  font-size: 20px;
+  font-family: 'viga';
+  font-weight: 500;
+  line-height: 18px;
+}
+#talks a span{
+  color:var(--white);
+  font-size: 16px;
+  font-family: 'arimo';
+  font-weight: normal;
+}
+#talks a:hover{
+  color:#f2f2f2;
+}
+#talks a:hover span{
+  color:#f2f2f2;
+}
+.speakers #apply a, .partners #apply1 a, .buttons a{
+  background-color: var(--red);
+  color:#ffffff;
+  margin-bottom: 35px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'viga';
+  padding:10px 20px;
+}
+.speakers #apply a:hover, .partners #apply1 a:hover {
+  color:var(--blue);
+  background-color: #ffffff;
+  font-family: 'viga';
+}
+.speakers #apply h2{
+  margin-top: 25px;
+  font-family: 'viga';
+  color:var(--white);
+  font-size: 30px;
+}
+.speakers h2{
+  font-family:'viga';
+  font-size:70px;
+  color:var(--white);
+}
+/*partners*/
+.partners-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap:10px;
+  justify-content:center;
+}
+.partners{
+  margin-top: 50px;
+}
+.partners h2{
+  font-size:80px;
+}
+.partners a img{
+  filter:grayscale(100%);
+  transition: 0.5s;
+}
+.partners a:hover img{
+  filter:grayscale(0);
+  transition: 0.5s;
+}
+.buttons{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-around;
+}
+.buttons #apply{
+  text-align: center;
+}
+.buttons a:hover{
+background-color: var(--blue);
+color:var(--white);
+}
+/*Responsiveness*/
+
+@media (max-width:800px){
+  #hero::before{
+  height:100vh;
+  filter:blur(3px);
+  max-width: 100%;
+  }
+  #hero .slogan{
+  filter:blur(0px);
+  left:15%;
+  top:55%;
+  max-width: 100%;
+  font-size:60px;
+  }
+  .register a{
+  top:65%;
+  left:36%;
+  padding: 15px 40px;
+  }
+  #count{
+  top:75%;
+  left:25%;
+  font-size: 40px;
+  }
+  .grid-2 , .activities{
+  grid-template-columns: 1fr;
+  }
+  #talks{
+    grid-template-columns: 1fr 1fr;
+  }
+.buttons{
+  grid-template-columns: 1fr;
+}
+  .partners-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:10px;
+    justify-content:center;
+  }
+}
+@media(max-width:600px){
+  #hero::before{
+  height:100vh;
+  filter:blur(3px);
+  max-width: 100%;
+}
+#hero .slogan{
+  filter:blur(0px);
+  left:14%;
+  top:67%;
+  max-width: 100%;
+  font-size: 30px;
+}
+.register a{
+  top:75%;
+  left:25%;
+  padding: 10px 20px;
+}
+#count{
+  top:85%;
+  left:15%;
+  font-size: 24px;
+}
+.grid-2, .activities{
+  grid-template-columns: 1fr;
+}
+.grid-2 .left h1, .activities h1{
+  font-size: 30px;
+  line-height: 40px;
+  padding: 10px;
+  text-align: center;
+}
+.grid-2 .row{
+  grid-template-columns: 1fr;
+  padding: 5px;
+}
+.grid-2 .right h2{
+  padding: 0;
+  font-size: 24px;
+  max-width: 80%;
+}
+.item-1, .item-2, .item-3{
+  margin-left: 25px;
+}
+#talks{
+  display:grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+#talks .img-pic{
+  max-width:100%;
+}
+.speakers{
+  padding-top: 10px;
+}
+.speakers h2{
+  font-size: 24px;
+  max-width: 100%;
+  text-align: center;
+}
+.speakers #apply h2{
+  font-size: 24px;
+  max-width: 100%;
+  text-align: center;
+}
+.partners-grid{
+  grid-template-columns: 1fr;
+}
+.partners img {
+  width:200px;
+}
+.partners-2 img{
+  width:200px;
+}
+.partners h2{
+  font-size: 24px;
+  max-width: 100%;
+}
+.buttons{
+  grid-template-columns: 1fr;
+}
+}
