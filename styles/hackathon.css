@@ -1,0 +1,25 @@
+* {
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+     font-family: "Viga", "Arimo";
+     /* font-family:'Arimo'; */
+
+}
+
+.header-txt {
+     background-image: url(../hackImgs/hackathon-bigpic.jpg);
+     background-size: cover;
+     height: 490px;
+}
+
+
+#overlay {
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hov:hover {
+     box-shadow: 2px 5px 8px black;
+}

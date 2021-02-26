@@ -110,13 +110,14 @@
               </div>
               </div>
               <div class="form-group col-lg-6 col-md-12 col-sm-12">
-                <label class="main font-weight-bold text-muted">ebter your e-mail:</label>
+                <label class="main font-weight-bold text-muted">enter your e-mail:</label>
                 <input id="emailInput" type="email"  class="form-control rounded" name="email" placeholder="" data-rule="email" data-msg="Please enter a valid email" />
                 <div class="text-danger d-none alert alert-danger" id="inputEmailAlert">
                   e-mail is valid , please enter you mail
               </div>
               </div>
             </div>
+           <div class="row">
             <div class="form-group col-lg-12 col-md-12 col-sm-12">
               <label class="main font-weight-bold text-muted">enter your number:</label>
               <input id="phoneNumInput" type="number" class="form-control rounded" name="subject" placeholder="" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
@@ -124,10 +125,13 @@
                 phone number is valid , please enter you number
             </div>
             </div>
-            <div class="form-group col-lg-12 col-md-12 col-sm-12">
-              <label class="main font-weight-bold text-muted">your massage:</label>
-              <textarea class="form-control rounded" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-              <div class="validation"></div>
+           </div>
+            <div class="row">
+              <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                <label class="main font-weight-bold text-muted">your massage:</label>
+                <textarea class="form-control rounded" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validation"></div>
+              </div>
             </div>
             <div class="text-center my-2"><button class="bb rounded-top" type="submit">Send Message</button></div>
           </form>
